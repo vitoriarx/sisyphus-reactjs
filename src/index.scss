@@ -1,0 +1,45 @@
+$corTexto: white;
+
+* {
+  background-color: #28293e;
+  color: $corTexto;
+  font-family: "Roboto", sans-serif;
+}
+img {
+  padding: 20px;
+  margin-right: auto;
+}
+button {
+  display: inline-flex;
+  padding: 17.5px 40.5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 7px;
+  background-color: var(--primary, #f36);
+  //colocar um box shadow
+
+  border: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+  gap: 30px;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  padding: 70px;
+  font-size: 20px;
+}
+
+.input-email {
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 250px;
+  height: 30px;
+}
