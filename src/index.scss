@@ -1,4 +1,5 @@
 $corTexto: white;
+$color: #f36;
 
 * {
   background-color: #28293e;
@@ -15,11 +16,10 @@ button {
   justify-content: center;
   align-items: center;
   gap: 10px;
-
+  cursor: pointer;
   border-radius: 7px;
   background-color: var(--primary, #f36);
-  //colocar um box shadow
-
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
   border: none;
 }
 
@@ -29,6 +29,12 @@ button {
   margin-right: 40px;
   gap: 30px;
   align-items: center;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  transition: 0.5s ease-in-out;
 }
 
 .container {
@@ -42,4 +48,31 @@ button {
   border: 1px solid white;
   width: 250px;
   height: 30px;
+  outline: none;
+}
+
+.input-email::placeholder {
+  padding: 10px;
+}
+
+.button-email {
+  width: 20px;
+  height: 30px;
+  margin: 20px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.button-email:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.8s ease all;
+  box-shadow: 0px 6px 12px rgba(6, 6, 6, 0.5);
+}
+
+.img-estudante {
+  width: 532px;
+  height: 432px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
 }

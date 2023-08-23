@@ -1,27 +1,33 @@
 import {} from "react";
-import minhaImagem from "./img/logoSisyphus.png";
+import Logo from "./img/logoSisyphus.png";
 import "./index.scss";
+import Estudante from "./img/estudante.png";
 
 function App() {
   return (
     <>
       <div className="menu">
-        <img src={minhaImagem} alt="Logo" />
-        <a>About</a>
-        <a>Services</a>
-        <a>Product</a>
+        <img src={Logo} alt="Logo" />
+        <a>Sobre</a>
+        <a>Serviços</a>
+        <a>Produtos</a>
 
-        <button>Demo</button>
+        <button>Demonstração</button>
       </div>
 
       <div className="container">
-        <h1>Manage your personal and all team task.</h1>
-        <p>Monitoring your personal and all team task more easily with us.</p>
+        <h1>Gerencie suas tarefas pessoais e de toda a equipe.</h1>
+        <p>
+          Monitore suas tarefas pessoais e de toda a equipe com mais facilidade
+          conosco.
+        </p>
 
         <input className="input-email" type="text" placeholder="Email" />
 
-        <button>Send</button>
+        <button className="button-email">Enviar</button>
       </div>
+
+      <img className="img-estudante" src={Estudante} alt="Estudante" />
     </>
   );
 }
